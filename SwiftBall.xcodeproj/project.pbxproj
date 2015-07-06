@@ -13,6 +13,8 @@
 		5205C9B71B42305C00A7B793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5205C9B61B42305C00A7B793 /* Images.xcassets */; };
 		5205C9BA1B42305C00A7B793 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5205C9B81B42305C00A7B793 /* LaunchScreen.xib */; };
 		5205C9C61B42305C00A7B793 /* SwiftBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205C9C51B42305C00A7B793 /* SwiftBallTests.swift */; };
+		5205C9D01B42338300A7B793 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205C9CF1B42338300A7B793 /* MainView.swift */; };
+		520C26721B474D6000ECF086 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C26711B474D6000ECF086 /* Ball.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5205C9BF1B42305C00A7B793 /* SwiftBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5205C9C41B42305C00A7B793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5205C9C51B42305C00A7B793 /* SwiftBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBallTests.swift; sourceTree = "<group>"; };
+		5205C9CF1B42338300A7B793 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		520C26711B474D6000ECF086 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 				5205C9AF1B42305C00A7B793 /* AppDelegate.swift */,
 				5205C9B11B42305C00A7B793 /* ViewController.swift */,
 				5205C9B31B42305C00A7B793 /* Main.storyboard */,
+				5205C9CF1B42338300A7B793 /* MainView.swift */,
 				5205C9B61B42305C00A7B793 /* Images.xcassets */,
 				5205C9B81B42305C00A7B793 /* LaunchScreen.xib */,
 				5205C9AD1B42305C00A7B793 /* Supporting Files */,
+				520C26711B474D6000ECF086 /* Ball.swift */,
 			);
 			path = SwiftBall;
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520C26721B474D6000ECF086 /* Ball.swift in Sources */,
 				5205C9B21B42305C00A7B793 /* ViewController.swift in Sources */,
+				5205C9D01B42338300A7B793 /* MainView.swift in Sources */,
 				5205C9B01B42305C00A7B793 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +417,7 @@
 				5205C9CB1B42305C00A7B793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5205C9CC1B42305C00A7B793 /* Build configuration list for PBXNativeTarget "SwiftBallTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +426,7 @@
 				5205C9CE1B42305C00A7B793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
