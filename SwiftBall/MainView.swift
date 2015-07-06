@@ -51,6 +51,7 @@ class MainView: UIView {
             setup()
         }
         
+        CGContextSetFillColorWithColor(context, UIColor.redColor().CGColor);
         for b in balls { b.draw(context) }
         
         for b in balls { b.integrate() }
